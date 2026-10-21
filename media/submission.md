@@ -77,7 +77,7 @@ python, rasterio, numpy, scipy, scikit-image, scikit-learn, sentinel-2, nasa-fir
 - Live demo: https://jannetekka.github.io/afterburn
 - Code: https://github.com/JannetEkka/afterburn
 - Contract on Monad testnet: https://testnet.monadvision.com/address/0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D
-- Video: (YouTube link)
+- Video: (YouTube link after upload; the file is media/afterburn-demo.mp4 in the repo)
 
 ## File upload
 `afterburn-deck.pdf` (the pitch deck, 10 slides).
