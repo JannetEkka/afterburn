@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Afterburn</title>
+<meta name="description" content="Punjab's farm-fire count fell 90%, burnt area fell a third. Afterburn reads the burn scar from Sentinel-2 and pays farmers who don't burn, through a pact anyone can recheck.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='%23ff7a1a'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23141210'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#"><span class="mark"></span>Afterburn</a>
+  <nav>
+    <a href="#map">Map</a>
+    <a href="#pact">The pact</a>
+    <a href="#how">How it works</a>
+    <a href="#recheck">Recheck</a>
+    <a href="https://github.com/JannetEkka/afterburn">Code</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <p class="eyebrow">Punjab, kharif season 2026 · Sentinel-2 · Monad testnet</p>
+  <h1>Punjab's fire count fell 90%. Burnt area fell a third.</h1>
+  <p class="lede">Farmers learned to light stubble after the satellites pass at 1:30 pm. Afterburn reads the scar a fire leaves for days, whatever hour it was lit, and pays farmers who don't burn through a pact anyone can recheck.</p>
+  <div class="stats">
+    <div class="stat"><b>&gt;90%</b><span>of large Punjab farm fires in 2024–25 started after 3 pm, against 3% in 2021 <a href="#sources">(iFOREST)</a></span></div>
+    <div class="stat"><b id="st-flames">160</b><span>fields Sentinel-2 caught in flames at 11:20 IST on Oct 18. <em id="st-flames-viirs">8%</em> of them were in the official VIIRS count that day</span></div>
+    <div class="stat"><b id="st-season">23,963 ha</b><span>of burn scars this season in our 80 × 52 km study area, Amritsar to Kapurthala</span></div>
+  </div>
+</section>
+
+<section id="map" class="mapwrap">
+  <div id="leaflet"></div>
+  <aside class="panel" id="panel">
+    <div class="panel-empty" id="panel-empty">
+      <h2>The map</h2>
+      <p>Coloured patches are burn scars the rule found, by the interval they appeared in. Yellow dots are the official VIIRS fire detections. Red dots are fields Sentinel-2 caught in flames at its 11:20 pass.</p>
+      <div id="legend"></div>
+      <p class="hint">The outlined fields are the demo pact. Click one, or jump to a village:</p>
+      <div class="vbuttons" id="vbuttons"></div>
+    </div>
+    <div class="plot" id="plot" hidden></div>
+  </aside>
+</section>
+
+<section id="pact" class="band">
+  <div class="wrap">
+    <h2>The pact, live on Monad testnet</h2>
+    <p class="sub">24 real fields in three villages, judged on this season's imagery. The farmers and the enrolment are simulated; nobody signed up these fields. A quarter of the payment goes out at sign-up, the rest after a clean verdict, and a village bonus only if every enrolled field stays clean.</p>
+    <div class="chain" id="chain"></div>
+    <div class="villages" id="villages"></div>
+    <h3>What happened on-chain</h3>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<section id="how" class="wrap how">
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step"><i>1</i><h3>Read the scar</h3><p>For every clear Sentinel-2 pass, each field is compared with its last clear view. A burnt field has no green crop, turns dark, and its Mid-Infrared Burn Index rises to the level of fresh char. A dozen published thresholds, no black box.</p></div>
+    <div class="step"><i>2</i><h3>Post the verdict</h3><p>The verifier posts the share of the field scarred and the keccak-256 hash of an evidence file: the field's polygon hash, the exact scene IDs, the rule and the numbers. The challenge window opens.</p></div>
+    <div class="step"><i>3</i><h3>Anyone can recheck</h3><p>Refetch the same public scenes, rerun the rule, compare hashes. Different answer? Stake a bond and challenge. The arbiter upholds it, or the bond goes to the pool.</p></div>
+    <div class="step"><i>4</i><h3>Pay, or don't</h3><p>Clean field: the remaining 75%. Burnt field: nothing more, and the money is freed. Village bonus only if every field stayed clean. Each 50 m land cell can be enrolled once, so the same field can't be paid twice.</p></div>
+  </div>
+
+  <div class="two">
+    <div>
+      <h3>Does the rule find real burns?</h3>
+      <p>We checked it against a different satellite on a different schedule. Inside the 375 m footprint of each VIIRS fire detection between Oct 13 and Oct 18, the rule calls <b id="v-in">18.9%</b> of the harvested land newly burnt. On random harvested land: <b id="v-rand">5.6%</b>. That's a <b id="v-lift">3.4×</b> lift.</p>
+      <p>And the other way round: of the <span id="v-scars">5,585</span> scars it found in those five days, only <b id="v-375">2.9%</b> have a VIIRS detection within 375 m. That's the gap the fire count leaves.</p>
+      <p>A learned model, trained positive-unlabeled on fields Sentinel-2 caught in flames, did worse (2.5× against 3.7× in the same test). The rule makes the verdicts.</p>
+    </div>
+    <div>
+      <h3>What it can't do yet</h3>
+      <ul class="limits">
+        <li>A field burnt and ploughed before the next clear pass can look like plain ploughed soil. The rule leans toward clean, since a false "burnt" takes money from a farmer who did the right thing.</li>
+        <li>No field-level accuracy figure yet. The best published model for Punjab (a CNN, Anand et al. 2025) reports a Dice score of 0.64. A pilot needs ground visits on a sample.</li>
+        <li>Clouds and smoke haze cost passes: two of six were unusable here.</li>
+        <li>The Punjabi notices are machine-written and not yet checked by a native speaker.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="recheck" class="band">
+  <div class="wrap">
+    <h2>Recheck a verdict yourself</h2>
+    <p class="sub">Every number on this page can be recomputed from public data in a few minutes.</p>
+<pre class="code"><code>git clone https://github.com/JannetEkka/afterburn &amp;&amp; cd afterburn
+pip install -r requirements.txt
+python pipeline/recheck.py docs/evidence/plot-19.json --pact <span id="pact-addr">&lt;pact address&gt;</span> --plot 19</code></pre>
+    <p class="sub">It reads the scenes the evidence lists from the Earth Search catalogue, reruns the rule, and prints the recomputed share next to the file's hash and the chain's. All 24 demo verdicts match.</p>
+  </div>
+</section>
+</main>
+
+<footer class="wrap foot" id="sources">
+  <p><b>Sources.</b> iFOREST, <i>Stubble Burning Status Report 2025</i> (fire timing, fire counts vs burnt area). NASA analysis of GEO-KOMPSAT-2A data on later-day burning (Dec 2025). Jack, Jayachandran, Kala, Pande, <i>Money (Not) to Burn</i>, J-PAL (upfront payments, +10 points compliance). Anand et al., <i>Remote Sensing</i> 17(6), 2025. Imagery: Copernicus Sentinel-2 L2A via Element 84 Earth Search. Fires: NASA FIRMS VIIRS. Basemap: Esri World Imagery.</p>
+  <p>Built by Jannet Ekka with Claude Code for the IEEE ClimateChain Global Hackathon 2026, Climate Data &amp; Environmental Monitoring track. Farmer notices written by Gemini. Villages are unnamed on purpose. MIT licence.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.4/ethers.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
