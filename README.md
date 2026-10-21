@@ -6,8 +6,9 @@ Afterburn checks each field for the burn scar a fire leaves for days, whatever t
 
 IEEE ClimateChain Global Hackathon 2026 · Track: **Climate Data & Environmental Monitoring**
 
-- Live demo: https://jannetekka.github.io/afterburn (after Pages is switched on)
-- Pact on Monad testnet: see [`docs/data/deployment.json`](docs/data/deployment.json)
+- Live demo: https://jannetekka.github.io/afterburn
+- Pact on Monad testnet: [`0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D`](https://testnet.monadvision.com/address/0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D) (every transaction is listed in [`docs/data/deployment.json`](docs/data/deployment.json))
+- Pitch deck: [`media/afterburn-deck.pdf`](media/afterburn-deck.pdf)
 - Demo video: _link added at submission_
 
 ## The problem
@@ -70,7 +71,7 @@ The contract is [`contracts/contracts/AfterburnPact.sol`](contracts/contracts/Af
 | Bonus | anyone | once every plot in a village has settled: paid to each clean plot if all stayed clean, otherwise returned to the pool |
 | Withdraw | funder | only money no farmer is owed |
 
-Roles are fixed at deploy, so a funder can't swap in a friendlier verifier mid-season. The demo uses a 10-minute challenge window instead of 72 hours, so the whole season fits in one session. It also runs one deliberately wrong challenge: a watcher claims the most clearly burnt field was clean, and the arbiter rejects it.
+Roles are fixed at deploy, so a funder can't swap in a friendlier verifier mid-season. On Monad, an account holding under 10 MON gets one value-spending transaction per 3 blocks (the [reserve-balance rule](https://docs.monad.xyz/developer-essentials/reserve-balance)); the demo script waits 3 blocks after each one. The demo uses a 10-minute challenge window instead of 72 hours, so the whole season fits in one session. It also runs one deliberately wrong challenge: a watcher claims the most clearly burnt field was clean, and the arbiter rejects it.
 
 Tests: `cd contracts && npm install && npx hardhat test` (13 passing).
 
@@ -80,10 +81,19 @@ Tests: `cd contracts && npm install && npx hardhat test` (13 passing).
 pip install -r requirements.txt
 python pipeline/recheck.py docs/evidence/plot-19.json
 # or straight from the site and the chain:
-python pipeline/recheck.py https://jannetekka.github.io/afterburn/evidence/plot-19.json --pact <address> --plot 19
+python pipeline/recheck.py https://jannetekka.github.io/afterburn/evidence/plot-19.json --pact 0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D --plot 19
 ```
 
-It prints the recomputed share of the field scarred, the dates it burned between, and the evidence hash next to the file's and the chain's. All 24 demo verdicts match.
+It prints the recomputed share of the field scarred, the dates it burned between, and the evidence hash next to the file's and the chain's. All 24 demo verdicts match. For plot 19:
+
+```
+recomputed: 74.55% of the plot scarred, between 2026-10-13 and 2026-10-18
+evidence file says: 74.55%
+evidence hash, recomputed: 0x8cb26d12150442171a3192b389647bc3e91e03a4a54ffa3e549b6963bac7b26b
+evidence hash, file:       0x8cb26d12150442171a3192b389647bc3e91e03a4a54ffa3e549b6963bac7b26b
+evidence hash, on-chain:   0x8cb26d12150442171a3192b389647bc3e91e03a4a54ffa3e549b6963bac7b26b (74.55%)
+MATCH: the verdict stands on public data.
+```
 
 ## The burn-scar rule
 

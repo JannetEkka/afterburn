@@ -42,6 +42,13 @@ async function roles(funder) {
   return w;
 }
 
+// Monad's reserve-balance rule: an account holding under 10 MON gets one value-spending transaction per
+// k = 3 blocks; a second one inside the window is included but reverts. So after each one, wait 3 blocks.
+async function afterValueSpend(receipt) {
+  if (network.name === "hardhat") return;
+  while ((await ethers.provider.getBlockNumber()) <= receipt.blockNumber + 3) await new Promise((r) => setTimeout(r, 700));
+}
+
 async function send(s, key, txp) {
   const tx = await txp;
   const r = await tx.wait();
@@ -60,14 +67,19 @@ async function main() {
 
   if (!s.pact) {
     // gas money for each role
-    for (const r of ["enroller", "verifier", "arbiter", "watcher"]) {
-      await send(s, `gas:${r}`, funder.sendTransaction({ to: w[r].address, value: E(process.env.ROLE_GAS || 0.12) }));
+    // gas money for each role, sized to its share of the work (Monad testnet charges the gas limit)
+    const gas = { enroller: 0.9, verifier: 0.3, arbiter: 0.05, watcher: 0.05 };
+    for (const r of Object.keys(gas)) {
+      if (s.txs[`gas:${r}`]) continue;
+      const rc = await send(s, `gas:${r}`, funder.sendTransaction({ to: w[r].address, value: E(gas[r]) }));
+      await afterValueSpend(rc);
     }
     const ha = plots.reduce((a, p) => a + p.ares, 0) / 100;
     const pool = (TERMS.ratePerHa + TERMS.bonusPerHa) * BigInt(Math.ceil(ha * 100)) / 100n + E(0.002);
     const Pact = await ethers.getContractFactory("AfterburnPact");
     const pact = await Pact.deploy(w.enroller.address, w.verifier.address, w.arbiter.address, TERMS, { value: pool });
     const r = await pact.deploymentTransaction().wait();
+    await afterValueSpend(r);
     Object.assign(s, {
       pact: await pact.getAddress(),
       deployTx: r.hash,

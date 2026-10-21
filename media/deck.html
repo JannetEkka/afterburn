@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Afterburn deck</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+  @page { size: 1600px 900px; margin: 0; }
+  :root { --bg: #141210; --bg2: #1c1916; --line: #2e2924; --text: #f1ece6; --muted: #b3a89c; --dim: #8a7f74; --ember: #ff7a1a; --viirs: #ffd60a; --clean: #3dd6c3; --burnt: #ff5a36; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: Inter, sans-serif; }
+  .s { width: 1600px; height: 900px; padding: 80px 96px; position: relative; overflow: hidden; page-break-after: always; background: var(--bg); }
+  .s:last-child { page-break-after: auto; }
+  .k { color: var(--ember); text-transform: uppercase; letter-spacing: .08em; font-size: 20px; font-weight: 600; margin-bottom: 22px; }
+  h1 { font-size: 84px; line-height: 1.05; margin: 0 0 28px; letter-spacing: -.02em; }
+  h2 { font-size: 60px; line-height: 1.08; margin: 0 0 30px; letter-spacing: -.015em; max-width: 1300px; }
+  p, li { font-size: 28px; line-height: 1.45; color: var(--muted); }
+  b { color: var(--text); }
+  .foot { position: absolute; left: 96px; right: 96px; bottom: 44px; display: flex; justify-content: space-between; color: var(--dim); font-size: 18px; }
+  .mark { display: inline-block; width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle, var(--bg) 0 30%, var(--ember) 32% 100%); vertical-align: -3px; margin-right: 10px; box-shadow: 0 0 16px rgba(255,122,26,.6); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+  .big { font-size: 120px; font-weight: 800; color: var(--ember); line-height: 1; letter-spacing: -.03em; }
+  .card { background: var(--bg2); border: 1px solid var(--line); border-radius: 16px; padding: 28px 32px; }
+  .card .n { font-size: 64px; font-weight: 800; color: var(--ember); line-height: 1.05; }
+  .card p { font-size: 24px; margin: 8px 0 0; }
+  .bars { display: flex; gap: 44px; align-items: flex-end; height: 380px; margin-top: 20px; }
+  .bar { width: 170px; text-align: center; }
+  .bar .col { width: 100%; border-radius: 10px 10px 0 0; }
+  .bar .v { font-size: 56px; font-weight: 800; margin-bottom: 10px; }
+  .bar .l { font-size: 22px; color: var(--muted); margin-top: 12px; }
+  img.shot { width: 100%; border-radius: 14px; border: 1px solid var(--line); display: block; }
+  table { border-collapse: collapse; font-size: 22px; width: 100%; }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--line); color: var(--muted); }
+  td:first-child { color: var(--text); white-space: nowrap; }
+  .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .chips figure { margin: 0; }
+  .chips img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; image-rendering: pixelated; }
+  .chips figcaption { color: var(--dim); font-size: 20px; margin-top: 6px; }
+  .flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 30px; }
+  .flow div { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 20px; font-size: 21px; color: var(--muted); min-height: 210px; }
+  .flow b { display: block; font-size: 24px; margin-bottom: 8px; color: var(--ember); }
+  pre { background: #0c0b0a; border: 1px solid var(--line); border-radius: 14px; padding: 24px 28px; font: 19px/1.6 "JetBrains Mono", monospace; color: var(--text); white-space: pre-wrap; margin: 0; }
+  pre .ok { color: var(--clean); font-weight: 600; }
+  ul { margin: 0; padding-left: 30px; }
+  li { margin-bottom: 12px; }
+</style>
+</head>
+<body>
+
+<section class="s">
+  <div class="k">IEEE ClimateChain Global Hackathon 2026 · Climate Data &amp; Environmental Monitoring</div>
+  <h1><span class="mark"></span>Afterburn</h1>
+  <h2 style="color:var(--muted);font-weight:500;font-size:46px;max-width:1200px">Farm-fire verification from the burn scar, and a pact that pays Punjab's farmers for not burning. Every verdict can be rechecked from public data.</h2>
+  <div class="foot"><span>Jannet Ekka</span><span>github.com/JannetEkka/afterburn · jannetekka.github.io/afterburn</span></div>
+</section>
+
+<section class="s">
+  <div class="k">The problem</div>
+  <h2>Punjab's fire count fell 90%. Burnt area fell a third.</h2>
+  <div class="grid2">
+    <div>
+      <p style="margin:0 0 8px;font-size:22px">What's left of the 2021 level, by 2025</p>
+      <div class="bars">
+        <div class="bar"><div class="v" style="color:var(--viirs)">~10%</div><div class="col" style="height:34px;background:var(--viirs)"></div><div class="l">active-fire count</div></div>
+        <div class="bar"><div class="v" style="color:var(--burnt)">~70%</div><div class="col" style="height:240px;background:var(--burnt)"></div><div class="l">burnt area</div></div>
+        <div class="bar"><div class="v" style="color:var(--dim)">100%</div><div class="col" style="height:340px;background:var(--line)"></div><div class="l">2021</div></div>
+      </div>
+    </div>
+    <div>
+      <p>Paddy straw burnt every October and November is a large share of Delhi's winter smoke.</p>
+      <p>The official measure is the count of fires seen by NASA's MODIS and VIIRS, which pass at <b>10:30 am and 1:30 pm</b>.</p>
+      <p>Schemes that pay or fine farmers on that count now pay for nothing.</p>
+    </div>
+  </div>
+  <div class="foot"><span>iFOREST, Stubble Burning Status Report 2025</span><span>2</span></div>
+</section>
+
+<section class="s">
+  <div class="k">Why</div>
+  <h2>The fires moved to after the satellite passes.</h2>
+  <div class="grid2">
+    <div><div class="big">&gt;90%</div><p>of large farm fires in Punjab in 2024 and 2025 started <b>after 3 pm</b>, seen by geostationary satellites that image every 15 minutes.</p></div>
+    <div><div class="big" style="color:var(--dim)">3%</div><p>did in 2021. NASA researchers found the same shift with GEO-KOMPSAT-2A. The fire is gone by the next morning's pass. The scar isn't.</p></div>
+  </div>
+  <div class="foot"><span>iFOREST 2025 (Meteosat SEVIRI); NASA / H. Jethva, Dec 2025</span><span>3</span></div>
+</section>
+
+<section class="s">
+  <div class="k">This week, in our data</div>
+  <div class="grid2" style="grid-template-columns:1.25fr 1fr">
+    <img class="shot" src="img/map.png" alt="Scar map">
+    <div>
+      <div class="card"><div class="n">160</div><p>fields Sentinel-2 caught in flames at 11:20 IST on Oct 18. Only <b>8%</b> had a VIIRS detection within 1 km that day.</p></div>
+      <div class="card" style="margin-top:18px"><div class="n">5,585</div><p>burn scars between the Oct 13 and Oct 18 passes. Only <b>2.9%</b> have a VIIRS detection within 375 m.</p></div>
+      <p style="font-size:22px;margin-top:18px">80 × 52 km of Amritsar, Tarn Taran and Kapurthala. <b>23,963 ha</b> of scars since Sep 23.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Copernicus Sentinel-2 L2A (Earth Search) · NASA FIRMS VIIRS</span><span>4</span></div>
+</section>
+
+<section class="s">
+  <div class="k">The check</div>
+  <h2>Read the scar, not the flame.</h2>
+  <div class="grid2" style="grid-template-columns:1.1fr 1fr">
+    <table>
+      <tr><td>No green crop</td><td>NDVI after &lt; 0.35</td></tr>
+      <tr><td>Char signal</td><td>MIRBI rises ≥ 0.25 and reaches ≥ 1.6 (ISRO NRSC's burnt-area index)</td></tr>
+      <tr><td>Darker</td><td>SWIR-1 drops ≥ 0.02; visible ≤ 0.10; NIR ≤ 0.25</td></tr>
+      <tr><td>Not noise</td><td>3×3 median, ≥ 0.4 ha patch</td></tr>
+      <tr><td>Clear view</td><td>Sentinel-2 scene classes; hazy passes skipped</td></tr>
+      <tr><td>Burnt field</td><td>≥ 20% of it scarred over the season</td></tr>
+    </table>
+    <div>
+      <div class="chips">
+        <figure><img src="../docs/chips/plot-19-2026-10-13.jpg"><figcaption>Plot 19, Oct 13: stubble</figcaption></figure>
+        <figure><img src="../docs/chips/plot-19-2026-10-18.jpg"><figcaption>Oct 18: 75% scarred</figcaption></figure>
+      </div>
+      <p style="font-size:22px">Each field is compared with its own last clear view, so a cloudy pass doesn't hide a burn. A dozen published thresholds, so anyone can recompute the result exactly.</p>
+    </div>
+  </div>
+  <div class="foot"><span>pipeline/burnscar.py · rule v2</span><span>5</span></div>
+</section>
+
+<section class="s">
+  <div class="k">Does it work?</div>
+  <h2>Checked against a different satellite on a different schedule.</h2>
+  <div class="grid2">
+    <div class="card"><div class="n">3.4×</div><p>Inside the 375 m footprint of each VIIRS fire detection, the rule calls <b>18.9%</b> of harvested land newly burnt. On random harvested land: <b>5.6%</b>.</p></div>
+    <div class="card"><div class="n" style="color:var(--dim)">2.5×</div><p>A positive-unlabeled gradient-boosting model trained on fields Sentinel-2 caught in flames, against <b>3.7×</b> for the rule in the same test. The rule makes the verdicts.</p></div>
+  </div>
+  <p style="margin-top:34px">Honest limit: this shows the rule finds burns. It isn't a per-field accuracy figure. The best published Punjab model reports a Dice score of 0.64, so a pilot needs ground checks on a sample.</p>
+  <div class="foot"><span>experiments/validate.py · experiments/pu_model.py</span><span>6</span></div>
+</section>
+
+<section class="s">
+  <div class="k">The pact</div>
+  <h2>Built on what worked in a 171-village trial.</h2>
+  <p>Paying part of the reward upfront raised compliance by <b>10 percentage points</b> (Jack, Jayachandran, Kala, Pande, <i>Money (Not) to Burn</i>, J-PAL).</p>
+  <div class="flow">
+    <div><b>Fund</b>A state scheme, CSR budget or straw buyer deposits. The contract won't promise money it doesn't hold.</div>
+    <div><b>Enrol</b>The cooperative signs a field up. 25% paid now. Each 50 m land cell can be enrolled once.</div>
+    <div><b>Verdict</b>Share of the field scarred + the evidence file's hash, posted after the season.</div>
+    <div><b>Challenge</b>Anyone who recomputes a different answer stakes a bond. The arbiter rules.</div>
+    <div><b>Settle</b>Clean: the other 75%. Burnt: nothing more, money freed for the funder.</div>
+    <div><b>Village bonus</b>Only if every enrolled field stayed clean. Neighbours talk each other out of it.</div>
+  </div>
+  <div class="foot"><span>contracts/AfterburnPact.sol · 13 tests</span><span>7</span></div>
+</section>
+
+<section class="s">
+  <div class="k">Live on Monad testnet</div>
+  <h2>24 real fields, a whole season, and a verdict anyone can recheck.</h2>
+  <div class="grid2" style="grid-template-columns:1.25fr 1fr">
+    <pre id="recheck">$ python pipeline/recheck.py docs/evidence/plot-19.json --pact 0xC892…6b2D --plot 19
+recomputed: 74.55% of the plot scarred, between 2026-10-13 and 2026-10-18
+evidence hash, recomputed: 0x8cb26d12…bac7b26b
+evidence hash, file:       0x8cb26d12…bac7b26b
+evidence hash, on-chain:   0x8cb26d12…bac7b26b (74.55%)
+<span class="ok">MATCH: the verdict stands on public data.</span></pre>
+    <div>
+      <ul>
+        <li><b>Village A</b>: 8 fields clean, bonus paid</li>
+        <li><b>Village B</b>: 1 of 8 burnt, bonus lost</li>
+        <li><b>Village C</b>: 3 of 8 burnt, bonus lost</li>
+        <li>A wrong challenge on a burnt field: rejected, bond to the pool</li>
+        <li>Farmers get the result in Punjabi and English (Gemini)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span id="addr">AfterburnPact 0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D · chain 10143</span><span>8</span></div>
+</section>
+
+<section class="s">
+  <div class="k">Who uses it, and how it scales</div>
+  <div class="grid2">
+    <div>
+      <p><b>Funders</b>: Punjab and Haryana's residue-management schemes, CSR budgets, and bio-CNG and biomass plants that need straw collected, not burnt.</p>
+      <p><b>Cooperatives and NGOs</b> enrol farmers and help them challenge a verdict.</p>
+      <p><b>Regulators</b> (CAQM) get burnt area that doesn't depend on the hour of the fire.</p>
+    </div>
+    <div>
+      <p><b>Scale</b>: Sentinel-2 covers all of Punjab and Haryana every 2–5 days, free. One 80 km area runs in minutes on a laptop.</p>
+      <p><b>Adoption</b>: payments can stay on the existing direct-benefit-transfer rails, with the pact as the public ledger they settle against.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Scale and adoption</span><span>9</span></div>
+</section>
+
+<section class="s">
+  <div class="k">Limits and next steps</div>
+  <div class="grid2">
+    <div>
+      <h3 style="font-size:34px;margin:0 0 16px">What it can't do yet</h3>
+      <ul>
+        <li>A field burnt and ploughed before the next clear pass can slip through. The rule leans toward clean.</li>
+        <li>No field-level accuracy figure without ground visits.</li>
+        <li>Clouds and smoke haze cost passes (2 of 6 here).</li>
+        <li>Punjabi notices not yet checked by a native speaker.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="font-size:34px;margin:0 0 16px">Next</h3>
+      <ul>
+        <li>One cooperative, one funder, one season: ground-check a sample of verdicts.</li>
+        <li>Add geostationary fire data as challenge evidence.</li>
+        <li>Arbiter as a multisig: funder, farmers' union, independent scientist.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Built by Jannet Ekka with Claude Code · Gemini writes the notices · MIT</span><span>10</span></div>
+</section>
+
+</body>
+</html>

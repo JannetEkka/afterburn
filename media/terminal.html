@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Recheck</title><style>
+body{margin:0;background:#141210;font:20px/1.6 "JetBrains Mono",ui-monospace,monospace;color:#f1ece6;display:grid;place-items:center;height:100vh}
+.term{width:1180px;background:#0c0b0a;border:1px solid #2e2924;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6);overflow:hidden}
+.bar{background:#1c1916;padding:10px 14px;color:#8a7f74;font-size:14px} .bar i{display:inline-block;width:11px;height:11px;border-radius:50%;background:#3a332d;margin-right:6px}
+.body{padding:22px 26px;font-size:17px;white-space:pre-wrap;word-break:break-all}
+.p{color:#ff7a1a} .l{opacity:0;animation:in .2s forwards} .l:last-child{color:#3dd6c3;font-weight:600}
+@keyframes in{to{opacity:1}}
+.cmd{overflow:hidden;white-space:nowrap;width:0;animation:type 1.4s steps(60) forwards;display:inline-block;vertical-align:bottom}
+@keyframes type{to{width:100%}}
+</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"></head><body>
+<div class="term"><div class="bar"><i></i><i></i><i></i> afterburn — recheck a verdict from public data</div>
+<div class="body"><span class="p">$ </span><span class="cmd">python pipeline/recheck.py docs/evidence/plot-19.json --pact 0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D --plot 19</span>
+<div class="l" style="animation-delay:1.6s">plot 19: 209 ares, window 32x27 px at 20 m</div><div class="l" style="animation-delay:2.5s">  reading 2026-09-23 S2C_43RDQ_20260923_0_L2A, S2C_43REQ_20260923_0_L2A</div><div class="l" style="animation-delay:3.4s">  reading 2026-10-03 S2C_43RDQ_20261003_0_L2A, S2C_43REQ_20261003_0_L2A</div><div class="l" style="animation-delay:4.3s">  reading 2026-10-13 S2C_43RDQ_20261013_0_L2A, S2C_43REQ_20261013_0_L2A</div><div class="l" style="animation-delay:5.2s">  reading 2026-10-18 S2B_43RDQ_20261018_0_L2A, S2B_43REQ_20261018_0_L2A</div><div class="l" style="animation-delay:6.1s">recomputed: 74.55% of the plot scarred, between 2026-10-13 and 2026-10-18</div><div class="l" style="animation-delay:7.0s">evidence file says: 74.55%</div><div class="l" style="animation-delay:7.9s">evidence hash, recomputed: 0x8cb26d12150442171a3192b389647bc3e91e03a4a54ffa3e549b6963bac7b26b</div><div class="l" style="animation-delay:8.8s">evidence hash, file:       0x8cb26d12150442171a3192b389647bc3e91e03a4a54ffa3e549b6963bac7b26b</div><div class="l" style="animation-delay:9.7s">evidence hash, on-chain:   0x8cb26d12150442171a3192b389647bc3e91e03a4a54ffa3e549b6963bac7b26b (74.55%)</div><div class="l" style="animation-delay:10.6s">MATCH: the verdict stands on public data.</div></div></div></body></html>

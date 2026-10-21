@@ -1,0 +1,23 @@
+Every October, farmers in Punjab burn paddy straw to clear their fields for wheat. The smoke is a big part of Delhi's winter air. The official measure is a count of fires seen by NASA satellites, and that count has fallen more than ninety percent since 2021.
+
+Burnt area fell by only about a third. Researchers using satellites that image every fifteen minutes found why. More than ninety percent of large fires in 2024 and 2025 started after three in the afternoon. The count is made from passes at ten thirty and one thirty. The fires moved to after the satellite leaves.
+
+This is Afterburn, on this week's data. Eighty by fifty kilometres of Amritsar, Tarn Taran and Kapurthala. The yellow dots are the official count: VIIRS fire detections. The orange and red patches are burn scars our rule found in Sentinel-2 imagery.
+
+Turn the scars off, and this is what the official count sees. Turn them back on. Between October thirteenth and eighteenth, the rule found more than five thousand burnt patches. Fewer than three percent have a VIIRS detection within 375 metres.
+
+The red dots are fields Sentinel-2 caught actually in flames, at eleven twenty in the morning on October eighteenth. There were 160 of them. Only eight percent appear in the official count that day.
+
+A fire leaves a scar for days, whatever hour it was lit. Between two clear passes, a burnt field has no green crop, turns dark, and its mid-infrared burn index rises to the level of fresh char. The rule is a dozen published thresholds. We checked it against VIIRS, a different satellite on a different schedule. Inside VIIRS fire footprints the rule finds three point four times more burnt land than on random harvested land. A machine-learning model we trained did worse, so the rule makes the verdicts.
+
+Now the pact. A randomised trial in 171 Punjab villages found that paying farmers part of the money upfront raised compliance by ten points. So Afterburn pays a quarter at sign-up, and the rest after a clean season. There's also a village bonus, paid only if every enrolled field stays clean, so neighbours have a reason to talk each other out of it.
+
+These are twenty-four real fields in three villages, judged on this season's imagery. Plot nineteen, in village C. Pale stubble on October thirteenth. Dark by the eighteenth. Seventy-five percent of the field scarred. The verdict is on Monad testnet, with the hash of an evidence file: the field's outline, the exact satellite scenes, the rule and the numbers.
+
+Anyone can recheck it. This script fetches the same public scenes, reruns the rule, and rebuilds the evidence. The recomputed hash, the file's hash and the hash on chain all match. If they didn't, anyone could stake a bond and challenge the verdict within the window.
+
+On chain, the whole season ran. Twenty-four fields enrolled, each paid its quarter at sign-up. Each fifty-metre square of land can be enrolled once, so the same field can't be paid twice. A watcher claimed the most clearly burnt field was clean. The arbiter checked the imagery and rejected it, and the bond went to the pool.
+
+Village A stayed clean, so every farmer there got the bonus. In village C three fields burned, so nobody there gets it. Each farmer also gets the result as a message in Punjabi and English, written by Gemini from the verdict's facts.
+
+What it can't do yet: a field burnt and ploughed before the next clear pass can slip through, and per-field accuracy needs ground checks in a real pilot. The next step is a cooperative and a funder willing to run one season. Afterburn is open source, and every number in this video can be recomputed from public data.

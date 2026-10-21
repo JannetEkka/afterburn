@@ -8,3 +8,5 @@ docs/data/deployment-hardhat.json
 __pycache__/
 *.pyc
 .env
+media/audio/
+media/rec/

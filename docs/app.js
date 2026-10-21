@@ -19,14 +19,24 @@ const getJSON = (u) => fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.jso
 const state = { chain: {}, villages: {} };
 
 async function main() {
-  const [plots, layers, notices, val, dep] = await Promise.all([
-    getJSON("data/plots.json"), getJSON("data/layers.json"), getJSON("data/notices.json"), getJSON("data/validation.json"), getJSON("data/deployment.json"),
+  const [plots, layers, notices, val, dep, snap] = await Promise.all([
+    getJSON("data/plots.json"), getJSON("data/layers.json"), getJSON("data/notices.json"), getJSON("data/validation.json"), getJSON("data/deployment.json"), getJSON("data/chain.json"),
   ]);
   Object.assign(state, { plots, layers, notices, val, dep });
+  if (snap && dep && snap.pact === dep.pact) {
+    // render from the last snapshot straight away, then refresh from the chain
+    state.chain = Object.fromEntries(Object.entries(snap.plots).map(([k, v]) => [Number(k), v]));
+    state.villages = snap.villages;
+    state.pool = { available: BigInt(snap.available), reserved: BigInt(snap.reserved) };
+    state.snapshot = snap;
+  }
   stats();
   drawMap();
-  if (dep && dep.pact) await readChain();
   pactSection();
+  if (dep && dep.pact) {
+    await readChain();
+    pactSection();
+  }
 }
 
 function stats() {
@@ -124,20 +134,27 @@ function plotStyle(p) {
 // ------------------------------------------------------------------ chain
 async function readChain() {
   try {
-    const provider = new ethers.JsonRpcProvider(RPC, 10143, { staticNetwork: true });
+    // the public RPC drops bursts, so read a few at a time and retry
+    const provider = new ethers.JsonRpcProvider(RPC, 10143, { staticNetwork: true, batchMaxCount: 1 });
     const c = new ethers.Contract(state.dep.pact, ABI, provider);
-    const [avail, res] = await Promise.all([c.available(), c.reserved()]);
+    const retry = async (fn, n = 4) => { for (let i = 0; ; i++) { try { return await fn(); } catch (e) { if (i >= n) throw e; await new Promise((r) => setTimeout(r, 400 * (i + 1))); } } };
+    const avail = await retry(() => c.available());
+    const res = await retry(() => c.reserved());
     state.pool = { available: avail, reserved: res };
-    await Promise.all(state.plots.plots.map(async (p) => {
-      const r = await c.plots(p.plot);
-      state.chain[p.plot] = { farmer: r.farmer, status: Number(r.status), burntBps: Number(r.burntBps), deadline: Number(r.deadline), bonusDone: r.bonusDone, evidenceHash: r.evidenceHash, polygonHash: r.polygonHash };
-    }));
-    for (const [v, ps] of Object.entries(groupVillages())) {
-      const r = await c.villages(ps[0].village_id);
+    const ps = state.plots.plots;
+    for (let i = 0; i < ps.length; i += 4) {
+      await Promise.all(ps.slice(i, i + 4).map(async (p) => {
+        const r = await retry(() => c.plots(p.plot));
+        state.chain[p.plot] = { farmer: r.farmer, status: Number(r.status), burntBps: Number(r.burntBps), deadline: Number(r.deadline), bonusDone: r.bonusDone, evidenceHash: r.evidenceHash, polygonHash: r.polygonHash };
+      }));
+    }
+    for (const [v, vps] of Object.entries(groupVillages())) {
+      const r = await retry(() => c.villages(vps[0].village_id));
       state.villages[v] = { plots: Number(r.plots), settled: Number(r.settled), clean: Number(r.clean), bonusUnlocked: r.bonusUnlocked };
     }
     for (const p of state.plots.plots) plotLayers[p.plot].setStyle(plotStyle(p));
     state.live = true;
+    state.snapshot = null;
   } catch (e) {
     console.warn("chain read failed", e);
     state.live = false;
@@ -202,7 +219,7 @@ function pactSection() {
   const settled = Object.values(state.chain).filter((c) => c.status >= 4).length;
   const clean = Object.values(state.chain).filter((c) => c.status === 4).length;
   $("#chain").innerHTML = dep && dep.pact
-    ? `<div class="stat"><b><a href="${EXPLORER}/address/${dep.pact}" target="_blank" rel="noopener">${short(dep.pact)}</a></b><span>AfterburnPact on Monad testnet (chain 10143)${state.live ? "" : ". Couldn't reach the RPC just now; showing the computed verdicts"}</span></div>
+    ? `<div class="stat"><b><a href="${EXPLORER}/address/${dep.pact}" target="_blank" rel="noopener">${short(dep.pact)}</a></b><span>AfterburnPact on Monad testnet (chain 10143)${state.live ? " · read live" : state.snapshot ? ` · snapshot at block ${fmt(state.snapshot.block)}` : ". Couldn't reach the RPC just now; showing the computed verdicts"}</span></div>
        <div class="stat"><b>${plots.plots.length}</b><span>fields enrolled in 3 villages</span></div>
        <div class="stat"><b>${settled ? `${clean} clean · ${settled - clean} burnt` : "in window"}</b><span>${settled} of ${plots.plots.length} settled</span></div>
        <div class="stat"><b>${pool ? Number(ethers.formatEther(pool.available)).toFixed(4) : "—"} MON</b><span>in the pool and owed to no one${pool ? `; ${Number(ethers.formatEther(pool.reserved)).toFixed(4)} MON still reserved for farmers` : ""}</span></div>`

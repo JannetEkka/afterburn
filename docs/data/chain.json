@@ -1,0 +1,245 @@
+{
+ "pact": "0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D",
+ "block": 72923049,
+ "at": "2026-10-21T09:35:36.918Z",
+ "plots": {
+  "1": {
+   "farmer": "0xd0Cc2c28C655250eb4eC161430233fF994ABbbae",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575240,
+   "bonusDone": true,
+   "evidenceHash": "0xe83a184197ffda41a0116290746b3b515fb71fc0c3e0ffd11e87170ddbd480b6",
+   "polygonHash": "0x8d857b9bc487ad898014a963c75f8132b732de533761554ff074cf8cd4a79fcc"
+  },
+  "2": {
+   "farmer": "0x273BBA160Ad38B04e65bc9BFE78dAFbaA0D47b33",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575241,
+   "bonusDone": true,
+   "evidenceHash": "0xebdb02fd7efd227307bfb6ee7aab3375ad45517a6e28539c48793905c1733138",
+   "polygonHash": "0x96d6fc680cc7c368bbf83d43874a24c2df0046088934b8c200c61bf1d68ccb3a"
+  },
+  "3": {
+   "farmer": "0x8c6eF94444B9224e2075Ab720b0C2f636ba163E0",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575242,
+   "bonusDone": true,
+   "evidenceHash": "0x65f27d24cd5ca1fe772d07f4d780814232bb62f4d0400c23eb494c8058c187a9",
+   "polygonHash": "0xa30ccf62585802aae09b4b5a388d21f56e35593807fb0e20f647f69aa0502b1c"
+  },
+  "4": {
+   "farmer": "0xDF72eD8c90FACF614a59Dd4b9aCAC3b83D653a1a",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575243,
+   "bonusDone": true,
+   "evidenceHash": "0xac5a6bbdb26d8c65713838558841ab57a5df9b166b6de206fad3765834a2f7e8",
+   "polygonHash": "0x6278c82c0ba6eadb0cd0fc45b097fd757dfec68dbddeca71fb533612d50f471a"
+  },
+  "5": {
+   "farmer": "0x57643D56E30259Ec940376A2c6cc66e1BD3Ca2Cf",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575243,
+   "bonusDone": true,
+   "evidenceHash": "0x2f73ee82392e0646ab10f59d6460f1b2c97d7e6e0d8a5008dec92951cfcb1a68",
+   "polygonHash": "0x3f23a1a38cf19f650ce3c4a5b2c7462dcc4b926a614f50df100d6fa487dedbd7"
+  },
+  "6": {
+   "farmer": "0xB3A4dF4de98AF49C3173DB17e271cC66347EAfD5",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575244,
+   "bonusDone": true,
+   "evidenceHash": "0x7d55ee338b8d5cc6340b13c7001ea47ae13a7038b08e15d1e926623169344f28",
+   "polygonHash": "0x2044ebcda0df5a9b746772c1cb86d90292bcf5c25afcb93cf2b7a9fedd9887fa"
+  },
+  "7": {
+   "farmer": "0x0008E44e07B1d3a1CD060647D3180408E06b1391",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575245,
+   "bonusDone": true,
+   "evidenceHash": "0xa2b10f3a360a557cabf34aa14d0f11ec007a2df8e85cb0a51630a93137c106cd",
+   "polygonHash": "0x850358f1d5920bc15f8f4dddf790781b58e38635c86cf87a0523853a325b4fe8"
+  },
+  "8": {
+   "farmer": "0x994c9c5c1197d1D705FD1Ece65dF52a71eF258d4",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575246,
+   "bonusDone": true,
+   "evidenceHash": "0x2890f9e688d9ca8df4b504da2c6d2e145d88fd3e819e85d85cc85790131f298f",
+   "polygonHash": "0x3ccbd7370092dbdcd39861fb04e37a814e1424f3cad99276b9ef11348a98ffc7"
+  },
+  "9": {
+   "farmer": "0xBf5DbA516a51246f2E35d447003Cca4c2e07eDa4",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575247,
+   "bonusDone": true,
+   "evidenceHash": "0xb134d4d2d018a96d7bfd42e9767930d27b675fd0cb87e6bfb65393be117ae4a6",
+   "polygonHash": "0x2c407c9e7092494606eeead15a5536d1eed911375462e145a04ef15bdac07ba2"
+  },
+  "10": {
+   "farmer": "0xd073107Ed2E0A18156799F0ce5cE70835500f205",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575248,
+   "bonusDone": true,
+   "evidenceHash": "0x784021c8064998971228cb058cdcdd04b455fa6f7f56992d9a64a5668f06b3f9",
+   "polygonHash": "0x659b05b606489dd36a3b45897add5830e571f2dc654b104fa2cafa87386bde4b"
+  },
+  "11": {
+   "farmer": "0x4D680bE1d8F55Ed2446A6F2790966FbA17862308",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575249,
+   "bonusDone": true,
+   "evidenceHash": "0x0c6b7e7b505017f9a638f64981e8042f607d0d39a1c15034e1a0e8883419f1bc",
+   "polygonHash": "0x0f5bdbf1545602e97046cb534665c09953fc544c5aba0ac6e5c349e4a58323ae"
+  },
+  "12": {
+   "farmer": "0x727223049c329FCaedaf98A86f710e963B51C415",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575250,
+   "bonusDone": true,
+   "evidenceHash": "0xfb7ed9534a0d725925f1162844424a94a313c4e89f581a4db34d1e14e6fb29b0",
+   "polygonHash": "0x6c6bf60c5e4ecde4aa5c6acf93acd9e6a9ececc8a6970640b1e9d4b535d971d5"
+  },
+  "13": {
+   "farmer": "0xEBCFC7Eab79Bcb4525F07Cb01EA11E5D95B20FB9",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575251,
+   "bonusDone": true,
+   "evidenceHash": "0xd1e8c0d2b3e381541aa17768dd4c311116c27f9f898c4892a3121ee8738cfa8b",
+   "polygonHash": "0xa575fa2f43f7b2afd09dbd015b331882dcbfcfe9f5b5cc14cfe8a739a0a6deb6"
+  },
+  "14": {
+   "farmer": "0x590f478b5654734c0b497A00ACda9229617b240a",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575252,
+   "bonusDone": true,
+   "evidenceHash": "0x3959cfa3a765c81e7365085e35ff7d944978131d49b678db87b152285ded777a",
+   "polygonHash": "0x7df1c68e83b6d40133226134d4ab445e673b588e499b22d59ca8a197591a5005"
+  },
+  "15": {
+   "farmer": "0x754aff9081f2833a68214423e61d33deba64d520",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575253,
+   "bonusDone": true,
+   "evidenceHash": "0x431080d92254dc8fea51bd743b63fe1dafbec02d8670519c4c40a7831a27cb15",
+   "polygonHash": "0x3c828303b75c2d2cee1051528034b3973b7a1939ba3d9b36efa2ebc4eb306545"
+  },
+  "16": {
+   "farmer": "0x7A62BCE43f5cEfACD9e1Ef18A11E635bBa8641d5",
+   "status": 5,
+   "burntBps": 7917,
+   "deadline": 1792575254,
+   "bonusDone": false,
+   "evidenceHash": "0xfedc27b95460ae9eaacddc3f0c976717f1f966acc3e69f9bede57f5672474958",
+   "polygonHash": "0x3e544857f2e03e5ae719a6850c6d16d59e119071144f4b0feceda31eb9f2983d"
+  },
+  "17": {
+   "farmer": "0x0dd30c09Aa4793019A876B22ca5Bc98CBA17230c",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575255,
+   "bonusDone": true,
+   "evidenceHash": "0x0932616eacfe0f37d4390adf43e8d40a4e6f400ccc078fd27fb3420479c0d77d",
+   "polygonHash": "0xc5ee50764082ecd61b22ab9bbfcf6b17249b4d673d304f6defb8a7298b749b61"
+  },
+  "18": {
+   "farmer": "0xcb5DBEffC35a94095867BFc3C6341C427120EC6e",
+   "status": 5,
+   "burntBps": 6667,
+   "deadline": 1792575256,
+   "bonusDone": false,
+   "evidenceHash": "0xfff2264f049978ac40ed3dbb568d8c1f2b3beffd8053cac3c0a6b116a4c71a5a",
+   "polygonHash": "0x74ff805af311645f53e34853e4792d3954688c27916cffb5a9f12925a3f51430"
+  },
+  "19": {
+   "farmer": "0x40f0b71c7B81EF0978A942c59AA818c755A39eC7",
+   "status": 5,
+   "burntBps": 7455,
+   "deadline": 1792575256,
+   "bonusDone": false,
+   "evidenceHash": "0x8cb26d12150442171a3192b389647bc3e91e03a4a54ffa3e549b6963bac7b26b",
+   "polygonHash": "0x4f4d7cb6344788c9d189a564ea675301a386b9193b46bef6454ebbce6336e316"
+  },
+  "20": {
+   "farmer": "0x9f583D8c7Bd6f74D0674de8228c0eF40E2c3Cc59",
+   "status": 5,
+   "burntBps": 3333,
+   "deadline": 1792575257,
+   "bonusDone": false,
+   "evidenceHash": "0x59d32674dc6e343ad3dceeb105f76e9d39d2f669a77c1e206b01967033463c56",
+   "polygonHash": "0x8230d01382def330ef8f97264fcb420eed0b5fd85dd2830b30e01c5f4069267b"
+  },
+  "21": {
+   "farmer": "0x6CeD12ab4E6e84359874862e344057eFFe71E4C6",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575258,
+   "bonusDone": true,
+   "evidenceHash": "0xad09406db8bf6b1e859cba7f0ef2422991d3504a12d5ee43c18afa34751d28bd",
+   "polygonHash": "0x634f530d7e444af130700c68dbb2b056d6638dcdd6dcaf6e2cb28683a8fa2bda"
+  },
+  "22": {
+   "farmer": "0xED4CBE946Dd1b0Cb852866480594deabb90193b3",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575259,
+   "bonusDone": true,
+   "evidenceHash": "0x82a54e074e7e2588e9915af8cea408b74b55fa2c52232baf0894e985e6b8f0c2",
+   "polygonHash": "0x61860c8550f19447a1391457fba79f8968bf28b667d9191dee02b6ec7cc37ea2"
+  },
+  "23": {
+   "farmer": "0x30A1F2b0813D57459759503a05b8Dde87C5d644b",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575260,
+   "bonusDone": true,
+   "evidenceHash": "0x9c6f2d38abef8f6cd67cca20a7177d8463db177811e5ea96ae6b56a1fb5a9cce",
+   "polygonHash": "0x76f97bad2868b7f276db316c7be7a52e95dab6957ca566c233ed7b927de6650e"
+  },
+  "24": {
+   "farmer": "0x059C08c904274C9cb556880db6083A61eae605AD",
+   "status": 4,
+   "burntBps": 0,
+   "deadline": 1792575261,
+   "bonusDone": true,
+   "evidenceHash": "0x66621364d5da212cf7d0b52219195ede46b4e0439a59ffb64aa192c48e556915",
+   "polygonHash": "0x388fccec2a04f1b5932f969d5a4343fd6dc638e761bf675d1af6820cedb86ca3"
+  }
+ },
+ "villages": {
+  "A": {
+   "plots": 8,
+   "settled": 8,
+   "clean": 8,
+   "bonusUnlocked": true
+  },
+  "B": {
+   "plots": 8,
+   "settled": 8,
+   "clean": 7,
+   "bonusUnlocked": false
+  },
+  "C": {
+   "plots": 8,
+   "settled": 8,
+   "clean": 5,
+   "bonusUnlocked": false
+  }
+ },
+ "available": "57850000000000000",
+ "reserved": "0"
+}
