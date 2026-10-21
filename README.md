@@ -9,7 +9,7 @@ IEEE ClimateChain Global Hackathon 2026 · Track: **Climate Data & Environmental
 - Live demo: https://jannetekka.github.io/afterburn
 - Pact on Monad testnet: [`0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D`](https://testnet.monadvision.com/address/0xC892d8B3FeB08Cb36c705019B500dd646CcF6b2D) (every transaction is listed in [`docs/data/deployment.json`](docs/data/deployment.json))
 - Pitch deck: [`media/afterburn-deck.pdf`](media/afterburn-deck.pdf)
-- Demo video (4:36): [`media/afterburn-demo.mp4`](media/afterburn-demo.mp4)
+- Demo video (4:36): https://youtu.be/XqyN4N3_2TY (also in the repo as [`media/afterburn-demo.mp4`](media/afterburn-demo.mp4))
 
 ## The problem
 
