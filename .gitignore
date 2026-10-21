@@ -1,0 +1,10 @@
+data/*.npz
+data/*.npy
+data/_*.json
+contracts/node_modules/
+contracts/artifacts/
+contracts/cache/
+docs/data/deployment-hardhat.json
+__pycache__/
+*.pyc
+.env

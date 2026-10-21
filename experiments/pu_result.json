@@ -1,0 +1,18 @@
+{
+ "positives": 1558,
+ "unlabeled": 160000,
+ "elkan_noto_c": 0.63,
+ "rule_id": "45ea427f991bda15",
+ "rule": {
+  "harvested_flagged": 0.056,
+  "in_viirs_footprints": 0.205,
+  "random_harvested": 0.056,
+  "lift": 3.7
+ },
+ "pu_model": {
+  "harvested_flagged": 0.033,
+  "in_viirs_footprints": 0.075,
+  "random_harvested": 0.031,
+  "lift": 2.47
+ }
+}

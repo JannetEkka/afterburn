@@ -1,0 +1,242 @@
+{
+ "1": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "2": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "3": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "4": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "5": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "6": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "7": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "8": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਦੇ ਸਾਰੇ ਖੇਤ ਸਾਫ਼ ਰਹਿਣ ਕਾਰਨ ਪਿੰਡ ਦਾ ਬੋਨਸ ਵੀ ਮਿਲ ਗਿਆ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since every enrolled field in the village stayed clean, the village bonus is unlocked. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "every enrolled field in the village stayed clean, so the village bonus is unlocked."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "9": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "10": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "11": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "12": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "13": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "14": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "15": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "16": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਪਾਏ ਗਏ ਹਨ। ਸਾਈਨ-ਅੱਪ ਵੇਲੇ ਦਿੱਤੇ 25% ਪੈਸੇ ਤੁਹਾਡੇ ਕੋਲ ਰਹਿਣਗੇ, ਪਰ ਬਾਕੀ 75% ਦਾ ਭੁਗਤਾਨ ਇਸ ਸੀਜ਼ਨ ਵਿੱਚ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ। ਪਿੰਡ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਕੋਈ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "A burn scar was found on your field. The 25% paid at sign-up is yours to keep, but the remaining 75% will not be paid this season. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "about 79% of the field shows a burn scar, which appeared between 2026-10-03 and 2026-10-13.",
+   "money": "the 25% paid at sign-up is yours to keep; the remaining 75% is not paid this season.",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "17": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "18": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਪਾਏ ਗਏ ਹਨ। ਸਾਈਨ-ਅੱਪ ਵੇਲੇ ਦਿੱਤੇ 25% ਪੈਸੇ ਤੁਹਾਡੇ ਕੋਲ ਰਹਿਣਗੇ, ਪਰ ਬਾਕੀ 75% ਦਾ ਭੁਗਤਾਨ ਇਸ ਸੀਜ਼ਨ ਵਿੱਚ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ। ਪਿੰਡ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਕੋਈ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "A burn scar was found on your field. The 25% paid at sign-up is yours to keep, but the remaining 75% will not be paid this season. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "about 67% of the field shows a burn scar, which appeared between 2026-10-03 and 2026-10-13.",
+   "money": "the 25% paid at sign-up is yours to keep; the remaining 75% is not paid this season.",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "19": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਪਾਏ ਗਏ ਹਨ। ਸਾਈਨ-ਅੱਪ ਵੇਲੇ ਦਿੱਤੇ 25% ਪੈਸੇ ਤੁਹਾਡੇ ਕੋਲ ਰਹਿਣਗੇ, ਪਰ ਬਾਕੀ 75% ਦਾ ਭੁਗਤਾਨ ਇਸ ਸੀਜ਼ਨ ਵਿੱਚ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ। ਪਿੰਡ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਕੋਈ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "A burn scar was found on your field. The 25% paid at sign-up is yours to keep, but the remaining 75% will not be paid this season. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "about 75% of the field shows a burn scar, which appeared between 2026-10-13 and 2026-10-18.",
+   "money": "the 25% paid at sign-up is yours to keep; the remaining 75% is not paid this season.",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "20": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਪਾਏ ਗਏ ਹਨ। ਸਾਈਨ-ਅੱਪ ਵੇਲੇ ਦਿੱਤੇ 25% ਪੈਸੇ ਤੁਹਾਡੇ ਕੋਲ ਰਹਿਣਗੇ, ਪਰ ਬਾਕੀ 75% ਦਾ ਭੁਗਤਾਨ ਇਸ ਸੀਜ਼ਨ ਵਿੱਚ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ। ਪਿੰਡ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਕੋਈ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "A burn scar was found on your field. The 25% paid at sign-up is yours to keep, but the remaining 75% will not be paid this season. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "about 33% of the field shows a burn scar, which appeared between 2026-10-03 and 2026-10-13.",
+   "money": "the 25% paid at sign-up is yours to keep; the remaining 75% is not paid this season.",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "21": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "22": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "23": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ },
+ "24": {
+  "pa": "ਤੁਹਾਡੇ ਖੇਤ ਵਿੱਚ ਕੋਈ ਸੜਨ ਦੇ ਨਿਸ਼ਾਨ ਨਹੀਂ ਮਿਲੇ ਹਨ। ਬਿਨਾਂ ਅੱਗ ਦੇ ਪਰਾਲੀ ਸੰਭਾਲਣ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਬਾਕੀ 75% ਭੁਗਤਾਨ ਭੇਜ ਦਿੱਤਾ ਗਿਆ ਹੈ। ਪਿੰਡ ਵਿੱਚ ਕਿਸੇ ਹੋਰ ਖੇਤ ਵਿੱਚ ਅੱਗ ਲੱਗਣ ਕਾਰਨ ਇਸ ਵਾਰ ਕੋਈ ਪਿੰਡ ਬੋਨਸ ਨਹੀਂ ਹੈ। ਜੇਕਰ ਤੁਹਾਨੂੰ ਲੱਗਦਾ ਹੈ ਕਿ ਇਹ ਨਤੀਜਾ ਗਲਤ ਹੈ, ਤਾਂ ਤੁਸੀਂ 72 ਘੰਟਿਆਂ ਦੇ ਅੰਦਰ ਚੁਣੌਤੀ ਦੇ ਸਕਦੇ ਹੋ ਅਤੇ ਸੈਟੇਲਾਈਟ ਤਸਵੀਰਾਂ ਦੀ ਮੁੜ ਜਾਂਚ ਕਰ ਸਕਦੇ ਹੋ।",
+  "en": "No burn scar was found on your field. Thank you for managing the straw without fire. The remaining 75% of the payment has been sent. Since at least one field in the village burned, there is no village bonus. If you believe this result is wrong, you can file a challenge within 72 hours and recheck the satellite images.",
+  "facts": {
+   "result": "no burn scar on the field. Thank you for managing the straw without fire.",
+   "money": "the remaining 75% of the payment has been sent to you (you received 25% at sign-up).",
+   "bonus": "at least one enrolled field in the village burned, so there is no village bonus this season."
+  },
+  "model": "gemini-3.1-flash-lite"
+ }
+}

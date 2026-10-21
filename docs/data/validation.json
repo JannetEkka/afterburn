@@ -1,0 +1,20 @@
+{
+ "interval": [
+  "2026-10-13",
+  "2026-10-18"
+ ],
+ "rule_id": "45ea427f991bda15",
+ "clear_land_ha": 309902,
+ "harvested_ha": 150401,
+ "burnt_ha": 8528,
+ "scars": 5585,
+ "viirs_detections": 125,
+ "burnt_share_in_viirs_footprints": 0.189,
+ "burnt_share_random_harvested": 0.056,
+ "lift": 3.4,
+ "scars_with_viirs_within_375m": 0.029,
+ "scars_with_viirs_within_750m": 0.074,
+ "flames_at_after_pass_px": 764,
+ "s2_fires_at_after_pass": 160,
+ "s2_fires_with_viirs_same_day_within_1km": 0.081
+}
