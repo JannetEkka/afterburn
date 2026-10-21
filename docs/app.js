@@ -19,10 +19,10 @@ const getJSON = (u) => fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.jso
 const state = { chain: {}, villages: {} };
 
 async function main() {
-  const [plots, layers, notices, val, dep, snap] = await Promise.all([
-    getJSON("data/plots.json"), getJSON("data/layers.json"), getJSON("data/notices.json"), getJSON("data/validation.json"), getJSON("data/deployment.json"), getJSON("data/chain.json"),
+  const [plots, layers, notices, val, dep, snap, chips] = await Promise.all([
+    getJSON("data/plots.json"), getJSON("data/layers.json"), getJSON("data/notices.json"), getJSON("data/validation.json"), getJSON("data/deployment.json"), getJSON("data/chain.json"), getJSON("data/chips.json"),
   ]);
-  Object.assign(state, { plots, layers, notices, val, dep });
+  Object.assign(state, { plots, layers, notices, val, dep, chips });
   if (snap && dep && snap.pact === dep.pact) {
     // render from the last snapshot straight away, then refresh from the chain
     state.chain = Object.fromEntries(Object.entries(snap.plots).map(([k, v]) => [Number(k), v]));
@@ -168,7 +168,10 @@ function openPlot(n) {
   const cls = verdictClass(p);
   const label = c && c.status ? STATUS[c.status] : isBurnt(p) ? "burnt" : "clean";
   const win = p.burnt_between || [];
-  const chips = state.plots.season.map((d) => `<figure class="chip ${win.includes(d) ? "burnwin" : ""}"><img src="chips/plot-${n}-${d}.jpg" alt="Plot ${n} on ${d}" loading="lazy"><figcaption>${d}${d === win[1] ? " · scar" : ""}</figcaption></figure>`).join("");
+  // one image pixel per 10 m Sentinel-2 pixel, scaled up as crisp squares; the outline is a vector on top
+  const cm = state.chips && state.chips[n];
+  const outline = cm ? `<svg viewBox="0 0 ${cm.w} ${cm.h}" preserveAspectRatio="none" aria-hidden="true"><polygon points="${cm.ring.map((q) => q.join(",")).join(" ")}"/></svg>` : "";
+  const chips = state.plots.season.map((d) => `<figure class="chip ${win.includes(d) ? "burnwin" : ""}"><div class="chipbox" style="aspect-ratio:${cm ? cm.w + "/" + cm.h : "1"}"><img src="chips/plot-${n}-${d}.png" alt="Plot ${n} on ${d}" loading="lazy">${outline}</div><figcaption>${d}${d === win[1] ? " · scar" : ""}</figcaption></figure>`).join("");
   const dep = state.dep;
   const tx = (k) => (dep && dep.txs && dep.txs[k] ? `<a href="${EXPLORER}/tx/${dep.txs[k]}" target="_blank" rel="noopener">${short(dep.txs[k])}</a>` : "—");
   const match = c && c.evidenceHash && c.evidenceHash.toLowerCase() === p.evidence_hash.toLowerCase();
@@ -181,6 +184,7 @@ function openPlot(n) {
     <span class="badge ${cls}">${label}</span>
     <div class="verdict"><b>${(p.burnt_bps / 100).toFixed(0)}%</b><span>of the field scarred${win.length ? `, between ${win[0]} and ${win[1]}` : " this season"}</span></div>
     <div class="chips">${chips}</div>
+    <p class="chipnote">Sentinel-2 true colour, the same 10 m pixels the verdict is computed from.</p>
     <dl class="kv">
       <dt>Rule</dt><dd>burn scar v${state.plots.rule.version} (<span class="mono">${state.plots.rule_id}</span>)</dd>
       <dt>Evidence</dt><dd><a href="${p.evidence_uri}" target="_blank">${p.evidence_uri}</a></dd>

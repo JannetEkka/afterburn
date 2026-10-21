@@ -1,14 +1,21 @@
 import { chromium } from 'playwright';
-import { execFileSync } from 'child_process';
+import { execFileSync, spawn } from 'child_process';
 import fs from 'fs';
 const AUDIO = '/home/user/afterburn/media/audio';
 const dur = fs.readdirSync(AUDIO).filter(f => /^scene\d+\.mp3$/.test(f)).sort().map(f =>
   1000 * parseFloat(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', `${AUDIO}/${f}`]).toString()));
 const W = 1440, H = 810, BASE = 'http://localhost:8766';
-const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
-const ctx = await browser.newContext({ viewport: { width: W, height: H }, recordVideo: { dir: 'rec', size: { width: W, height: H } } });
-const page = await ctx.newPage();
-const t0 = Date.now();
+// A real Chromium window on a virtual 1920x1080 display, recorded by ffmpeg at near-lossless quality.
+// The 4/3 device scale keeps the page laid out at 1440x810 CSS px, as in the earlier cut.
+const DISPLAY = process.env.DISPLAY || ':99';
+// a persistent context reuses the launch window, so kiosk mode holds and no browser UI takes space
+fs.rmSync('profile', { recursive: true, force: true });
+const ctx = await chromium.launchPersistentContext(`${process.cwd()}/profile`, {
+  executablePath: '/opt/pw-browsers/chromium', headless: false, viewport: null,
+  args: ['--kiosk', '--window-position=0,0', '--window-size=1440,810', '--force-device-scale-factor=1.3333333', '--hide-scrollbars'],
+  ignoreDefaultArgs: ['--enable-automation'], env: { ...process.env, DISPLAY },
+});
+const page = ctx.pages()[0] || await ctx.newPage();
 const wait = ms => page.waitForTimeout(ms);
 const scrollTo = sel => page.evaluate(s => { const el = document.querySelector(s); window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 56, behavior: 'smooth' }); }, sel);
 // set a map layer on or off by its legend checkbox (idempotent, so a missed or doubled click can't flip it the wrong way)
@@ -16,7 +23,13 @@ const layer = (i, on) => page.evaluate(([i, on]) => { const el = document.queryS
 async function scene(i, fn) { const t = Date.now(); await fn(); const left = dur[i] - (Date.now() - t); if (left > 0) await wait(left); }
 
 await page.goto(`${BASE}/docs/`, { waitUntil: 'networkidle' });
-await wait(2500);  // tiles and chain reads; trimmed from the front later
+console.log('css viewport', await page.evaluate(() => [innerWidth, innerHeight, devicePixelRatio]));
+await wait(2500);  // tiles and chain reads
+fs.mkdirSync('x11', { recursive: true });
+const grab = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'x11grab', '-draw_mouse', '0', '-framerate', '30', '-video_size', '1920x1080', '-i', `${DISPLAY}.0+0,0`,
+  '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', '10', '-pix_fmt', 'yuv444p', 'x11/raw.mkv'], { stdio: ['pipe', 'inherit', 'inherit'] });
+const t0 = Date.now();
+await wait(1500);  // let ffmpeg start; this lead-in is trimmed
 const start = Date.now();
 // 1 hero
 await scene(0, async () => {});
@@ -48,8 +61,8 @@ await scene(10, async () => {
 // 12 limits and close
 await scene(11, async () => { await page.evaluate(() => { closePlot(); }); await page.evaluate(() => document.querySelector('.limits').scrollIntoView({ behavior: 'smooth', block: 'center' })); await wait(11000); await page.evaluate(() => window.scrollTo({ top: 0, behavior: 'smooth' })); });
 await wait(1500);
-fs.writeFileSync('rec/offset.txt', String((start - t0) / 1000));
-const video = page.video();
+fs.writeFileSync('x11/offset.txt', String((start - t0) / 1000));
+grab.stdin.write('q');
+await new Promise((r) => grab.on('close', r));
+console.log('recorded x11/raw.mkv; lead-in', (start - t0) / 1000, 's; narration', (dur.reduce((a, b) => a + b, 0) / 1000).toFixed(1), 's');
 await ctx.close();
-console.log('recorded', await video.path(), 'scenes', dur.length, 'total', (dur.reduce((a, b) => a + b, 0) / 1000).toFixed(1), 's');
-await browser.close();

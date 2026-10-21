@@ -34,7 +34,10 @@
   td:first-child { color: var(--text); white-space: nowrap; }
   .chips { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
   .chips figure { margin: 0; }
-  .chips img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; image-rendering: pixelated; }
+  .chipbox { position: relative; border-radius: 10px; overflow: hidden; }
+  .chipbox img { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
+  .chipbox svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .chipbox polygon { fill: none; stroke: #00e6ff; stroke-width: 3; vector-effect: non-scaling-stroke; }
   .chips figcaption { color: var(--dim); font-size: 20px; margin-top: 6px; }
   .flow { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 30px; }
   .flow div { background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 20px; font-size: 21px; color: var(--muted); min-height: 210px; }
@@ -112,8 +115,8 @@
     </table>
     <div>
       <div class="chips">
-        <figure><img src="../docs/chips/plot-19-2026-10-13.jpg"><figcaption>Plot 19, Oct 13: stubble</figcaption></figure>
-        <figure><img src="../docs/chips/plot-19-2026-10-18.jpg"><figcaption>Oct 18: 75% scarred</figcaption></figure>
+        <figure><div class="chipbox" style="aspect-ratio:63/54"><img src="../docs/chips/plot-19-2026-10-13.png"><svg viewBox="0 0 63 54" preserveAspectRatio="none"><polygon points="29.0,21.0 29.0,27.0 21.0,27.0 21.0,28.0 20.0,28.0 20.0,33.0 42.0,33.0 42.0,21.0 29.0,21.0"/></svg></div><figcaption>Plot 19, Oct 13: stubble</figcaption></figure>
+        <figure><div class="chipbox" style="aspect-ratio:63/54"><img src="../docs/chips/plot-19-2026-10-18.png"><svg viewBox="0 0 63 54" preserveAspectRatio="none"><polygon points="29.0,21.0 29.0,27.0 21.0,27.0 21.0,28.0 20.0,28.0 20.0,33.0 42.0,33.0 42.0,21.0 29.0,21.0"/></svg></div><figcaption>Oct 18: 75% scarred (10 m pixels)</figcaption></figure>
       </div>
       <p style="font-size:22px">Each field is compared with its own last clear view, so a cloudy pass doesn't hide a burn. A dozen published thresholds, so anyone can recompute the result exactly.</p>
     </div>

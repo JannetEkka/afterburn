@@ -1,13 +1,15 @@
-"""Before/after true-colour chips of each plot at 10 m, with the plot outlined. For the site and the deck."""
+"""Before/after true-colour chips of each plot, for the site and the deck.
+
+Each chip is saved at Sentinel-2's own 10 m resolution as a lossless PNG, one image pixel per satellite pixel, so the
+browser can scale it up as crisp squares instead of smearing it. The plot outline is written separately as pixel
+coordinates (docs/data/chips.json) and drawn as a vector on top, so it stays sharp at any size.
+"""
 import json
 import os
 import sys
 
 import numpy as np
-from PIL import Image, ImageDraw
-from rasterio.features import rasterize
-from scipy import ndimage as ndi
-from shapely.geometry import shape
+from PIL import Image
 
 import s2
 import verdict as vd
@@ -20,24 +22,24 @@ def rgb(z):
     return (np.clip(np.nan_to_num(a) / 0.22, 0, 1) ** 0.75 * 255).astype(np.uint8)
 
 
-def main(scale=6):
+def main():
     st = json.load(open(f"{ROOT}/data/study.json"))
     plots = json.load(open(f"{ROOT}/docs/data/plots.json"))
     os.makedirs(f"{ROOT}/docs/chips", exist_ok=True)
     items = {d: s2.items(st["dates"][d]) for d in plots["season"]}
+    meta = {}
     for p in plots["plots"]:
         poly = vd.to_utm(p["polygon"])
         win = vd.window(poly, res=10)
-        edge = rasterize([(poly, 1)], out_shape=win["shape"], transform=win["transform"], fill=0, dtype="uint8").astype(bool)
-        edge = edge & ~ndi.binary_erosion(edge)
+        l, b, r, t = win["bounds"]
+        h, w = win["shape"]
+        ring = [[round((x - l) / 10, 2), round((t - y) / 10, 2)] for x, y in poly.exterior.coords]
+        meta[p["plot"]] = {"w": w, "h": h, "ring": ring}
         for d in plots["season"]:
             z = s2.read_grid(items[d], win, bands=("B02", "B03", "B04"))
-            im = Image.fromarray(rgb(z)).resize((win["shape"][1] * scale, win["shape"][0] * scale), Image.NEAREST)
-            dr = ImageDraw.Draw(im)
-            for y, x in zip(*np.nonzero(edge)):
-                dr.rectangle([x * scale, y * scale, x * scale + scale - 1, y * scale + scale - 1], outline=(0, 230, 255))
-            im.save(f"{ROOT}/docs/chips/plot-{p['plot']}-{d}.jpg", quality=85)
+            Image.fromarray(rgb(z)).save(f"{ROOT}/docs/chips/plot-{p['plot']}-{d}.png", optimize=True)
         print("plot", p["plot"], file=sys.stderr)
+    json.dump(meta, open(f"{ROOT}/docs/data/chips.json", "w"))
 
 
 if __name__ == "__main__":
