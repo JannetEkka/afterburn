@@ -135,3 +135,4 @@ dl.kv dd { margin: 0; word-break: break-all; }
   .top nav { gap: 12px; }
   .top nav a:nth-child(n+4) { display: none; }
 }
+.chain .stat:first-child b { font-size: 1.25rem; padding-top: 8px; }
